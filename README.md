@@ -4,7 +4,9 @@
 
 ## Структура проекта
 cinema-booking/
+
 ├── cinema-backend/   # Spring Boot REST API (Java 17)
+
 └── cinema-react/     # React + Vite (Node.js 18+)
 
 ## Запуск
