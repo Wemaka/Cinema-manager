@@ -1,0 +1,90 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #0f172a;
+  background-color: #f1f5f9;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+/* ── CSS-переменные тем ── */
+.theme-light {
+  --bg: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-input: #ffffff;
+  --bg-hover: #f1f5f9;
+  --bg-confirm: #fef2f2;
+  --text: #0f172a;
+  --text-muted: #64748b;
+  --border: #cbd5e1;
+  --border-item: #e2e8f0;
+  --border-danger: #fca5a5;
+  --shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
+  --nav-active-bg: #dbeafe;
+  --nav-active-text: #1e40af;
+  --nav-active-border: #3b82f6;
+  --link: #2563eb;
+  --link-hover: #1d4ed8;
+  --badge-finished-bg: #f1f5f9;
+  --badge-finished-text: #475569;
+  --detail-border: #e2e8f0;
+  --modal-bg: #ffffff;
+  --modal-close-hover: #f1f5f9;
+  --color-scheme: light;
+  --badge-upcoming-bg: #fef9c3;
+  --badge-upcoming-text: #854d0e;
+  --badge-ongoing-bg: #dcfce7;
+  --badge-ongoing-text: #166534;
+  --focus-border: #3b82f6;
+  --btn-primary: #3b82f6;
+  --btn-success: #22c55e;
+  --btn-warning: #94a3b8;
+  --btn-danger: #ef4444;
+  --loader-color: #3b82f6;
+  --error-color: #dc2626;
+} 
+
+.theme-dark {
+  --bg: #020617;
+  --bg-card: #0f172a;
+  --bg-input: #1e293b;
+  --bg-hover: #1e293b;
+  --bg-confirm: #1c0a0a;
+  --text: #e2e8f0;
+  --text-muted: #94a3b8;
+  --border: #334155;
+  --border-item: #334155;
+  --border-danger: #7f1d1d;
+  --shadow: none;
+  --nav-active-bg: #1e3a5f;
+  --nav-active-text: #bfdbfe;
+  --nav-active-border: #60a5fa;
+  --link: #60a5fa;
+  --link-hover: #93c5fd;
+  --badge-finished-bg: #1e293b;
+  --badge-finished-text: #94a3b8;
+  --detail-border: #334155;
+  --modal-bg: #0f172a;
+  --modal-close-hover: #1e293b;
+  --color-scheme: dark;
+  --badge-upcoming-bg: #422006;
+  --badge-upcoming-text: #fde68a;
+  --badge-ongoing-bg: #052e16;
+  --badge-ongoing-text: #86efac;
+  --focus-border: #60a5fa;
+  --btn-primary: #2563eb;
+  --btn-success: #16a34a;
+  --btn-warning: #64748b;
+  --btn-danger: #dc2626;
+  --loader-color: #60a5fa;
+  --error-color: #f87171;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--bg);
+}
