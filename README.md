@@ -18,6 +18,7 @@ cinema-booking/
 ```
 
 Проверить: http://localhost:8080/api/screenings
+
 http://localhost:8080/swagger-ui/index.html#/
 
 ### 2. Фронтенд (порт 5173)
