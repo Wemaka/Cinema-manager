@@ -10,7 +10,7 @@ function ScreeningForm({ onSubmit }) {
   }
 
   function handleSubmit() {
-    if (!form.title || !form.genre || !form.hall || !form.dateTime || !form.price) return
+    if (!form.title || !form.genre || !form.age || !form.hall || !form.dateTime || !form.price) return
     onSubmit(form)
     setForm(EMPTY)
   }
@@ -29,6 +29,12 @@ function ScreeningForm({ onSubmit }) {
           <option value="">— выберите —</option>
           {GENRES.map((g) => <option key={g} value={g}>{g}</option>)}
         </select>
+      </div>
+
+      <div className="form-group">
+        <label className="form-label">Возрастное ограничение</label>
+        <input type="number" name="age" value={form.age} onChange={handleChange}
+          className="form-input" min="1" placeholder="6+" />
       </div>
 
       <div className="form-group">

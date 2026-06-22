@@ -33,6 +33,7 @@ function ScreeningsPage() {
   if (isLoading) return <Loader />
   if (error)     return <ErrorMessage message={error} />
 
+  
   // Детальная страница сеанса
   if (selectedId !== null) {
     const screening = screenings.find((s) => s.id === selectedId)

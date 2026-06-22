@@ -54,7 +54,7 @@ function ScreeningDetail({ screening, onBack, onStart, onFinish, onDelete }) {
                   <td className="detail-value">{genre}</td>
                 </tr>
                 <tr>
-                  <td className="detail-label">Возраст</td>
+                  <td className="detail-label">Возрастное ограничение</td>
                   <td className="detail-value">{age}</td>
                 </tr>
                 <tr>
