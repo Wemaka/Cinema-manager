@@ -8,7 +8,6 @@ import NotFoundPage from './pages/NotFoundPage'
 
 function App() {
   return (
-    // Единая таблица маршрутов. Layout-роут даёт общий каркас для всех страниц.
     <Routes>
       <Route element={<AppLayout />}>
         <Route path="/" element={<ScreeningsPage />} />

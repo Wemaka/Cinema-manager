@@ -53,7 +53,6 @@ function ScreeningsPage() {
 
   return (
     <div className="page-grid">
-      {/* Страница «подписывается» на данные из контекста — без глубокой передачи props. */}
       <SectionCard title="Сеансы">
         <button type="button" className="btn btn-outline" onClick={() => setShowForm(true)}>
           Добавить сеанс

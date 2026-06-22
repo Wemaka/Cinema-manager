@@ -9,7 +9,6 @@
   text-rendering: optimizeLegibility;
 }
 
-/* ── CSS-переменные тем ── */
 .theme-light {
   --bg: #f8fafc;
   --bg-card: #ffffff;

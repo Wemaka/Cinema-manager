@@ -1,5 +1,3 @@
-// Начальные данные сеансов. Вынесены в отдельный модуль для чистой архитектуры.
-// ScreeningStatus: UPCOMING | ONGOING | FINISHED
 export const initialScreenings = [
   {
     id: 1,

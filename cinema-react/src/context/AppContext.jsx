@@ -16,7 +16,6 @@ export function AppContextProvider({ children }) {
     })
   }, [])
 
-  // useMemo стабилизирует ссылку на объект value — снижает лишние перерисовки.
   const value = useMemo(
     () => ({
       theme,

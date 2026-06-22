@@ -6,7 +6,6 @@ const ScreeningContext = createContext(null)
 
 export function ScreeningContextProvider({ children }) {
   const state = useScreenings()
-  // useMemo стабилизирует ссылку, снижая лишние перерисовки.
   const value = useMemo(() => state, [state])
 
   return (

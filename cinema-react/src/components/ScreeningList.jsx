@@ -4,7 +4,6 @@ import StatusBadge from './ui/StatusBadge'
 import ScreeningActions from './ScreeningActions'
 import { formatDateTime } from '../utils/formatDate'
 
-// memo: компонент перерисуется только если изменятся props.
 const ScreeningItem = memo(function ScreeningItem({
   screening, onStart, onFinish, onDelete, onSelect,
 }) {

@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 
 function FinishedList({ screenings, onSelect, onClearArchive }) {
   const finished = screenings.filter((s) => s.status === 'FINISHED')
-  // confirm === true → показываем диалог подтверждения
   const [confirm, setConfirm] = useState(false)
 
   function handleClearClick() {
@@ -41,14 +40,12 @@ function FinishedList({ screenings, onSelect, onClearArchive }) {
         ))}
       </ul>
 
-      {/* Кнопка «Удалить всё» — показывается только если есть записи */}
       {finished.length > 0 && !confirm && (
         <button type="button" className="btn btn-delete btn-clear-archive" onClick={handleClearClick}>
           Удалить всё
         </button>
       )}
 
-      {/* Диалог подтверждения */}
       {confirm && (
         <div className="confirm-box">
           <p className="confirm-text">Удалить все {finished.length} записи из архива?</p>

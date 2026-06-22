@@ -1,7 +1,6 @@
 import { initialScreenings } from '../data/screenings'
 
-// Имитация API: отделяем источник данных от компонентов,
-// чтобы проще заменить mock на реальный backend (GET /api/screenings).
+// Имитация API
 // export async function fetchScreenings() {
 //   await new Promise((resolve) => setTimeout(resolve, 350))
 //   return structuredClone(initialScreenings)

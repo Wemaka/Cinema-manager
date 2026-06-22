@@ -34,7 +34,6 @@ function ArchivePage() {
 
   return (
     <div className="page-grid">
-      {/* Производное значение finishedScreenings считается в хуке — не дублируется здесь. */}
       <SectionCard title={`Архив (${finishedScreenings.length})`}>
         <ArchiveList
           screenings={finishedScreenings}

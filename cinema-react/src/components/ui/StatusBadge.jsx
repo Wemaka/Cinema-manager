@@ -12,7 +12,6 @@ function StatusBadge({ status }) {
   return <span className={`badge ${cls}`}>{label}</span>
 }
 
-// проверка что status - строка
 StatusBadge.propTypes = { status: PropTypes.string.isRequired }
 
 export default StatusBadge

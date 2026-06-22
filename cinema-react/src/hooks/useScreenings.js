@@ -2,15 +2,12 @@ import { useCallback, useEffect, useMemo, useState } from 'react'
 import { fetchScreenings } from '../services/screeningsApi'
 import { ScreeningStatus } from '../constants/constants'
 
-// Хук изолирует бизнес-логику работы с сеансами от UI-компонентов.
-// Статусы: UPCOMING → ONGOING → FINISHED
 export function useScreenings() {
   const [screenings, setScreenings] = useState([])
   const [isLoading, setIsLoading] = useState(true)
   const [error, setError] = useState('')
 
   useEffect(() => {
-    // Защита от обновления состояния после размонтирования компонента.
     let isMounted = true
 
     async function loadScreenings() {
@@ -28,7 +25,6 @@ export function useScreenings() {
     return () => { isMounted = false }
   }, [])
 
-  // useCallback сохраняет стабильную ссылку — удобно при передаче в memo-компоненты.
   const addScreening = useCallback((formData) => {
     const newScreening = {
       id: Date.now(),
@@ -59,7 +55,6 @@ export function useScreenings() {
     setScreenings((prev) => prev.filter((s) => s.status !== ScreeningStatus.FINISHED))
   }, [])
 
-  // Производные значения считаются из исходного состояния — не хранятся в useState.
   const activeScreenings = useMemo(
     () => screenings.filter((s) => s.status !== ScreeningStatus.FINISHED),
     [screenings],
